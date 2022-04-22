@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<!-- Metadata -->
+    <meta charset="utf-8" />
+    <meta name="description" content="Volume with JavaScript" />
+    <meta name="keywords" content="immaculata, ics2o" />
+    <meta name="author" content="Stella S" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Code for the favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png" />
+    <link rel="manifest" href="./fav/site.webmanifest" />
+
+  <!-- Code for the style sheets-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-green.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!--Title-->
+    <title>How many cups of water should u drink a day</title>
+  </head>
+  <center><body>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Calculate How Many Cups of Water you Should Drink a Day</span> 
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+
+         <!--Image-->
+      <img src="./image/fancy_water.webp" width="30%" height="auto"/>
+        
+        <p>Calculate the Volume of a Right Triangular Pyramid</p>
+        
+        <!--Simple Textfield -->
+        <center><form action="#">
+          <p>Weight (Ilbs)</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="body_weight"
+            />
+            <label class="mdl-textfield__label" for="body_weight">Enter Body Weight ...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form></center>
+        
+        <!-- Simple Textfield -->
+        <center><form action="#">
+          <p>Enter age if between 30-55</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="person_age"
+            />
+           <label class="mdl-textfield__label" for="person_age">Enter age ...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form></center>
+				
+        <!-- Raised button with ripple -->
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="calculate()"
+        >
+          Calculate
+        </button>
+        
+        <div id="water"></div>
+      </main>
+    </div>
+  </center></body>
+</html>

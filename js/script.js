@@ -11,8 +11,8 @@
 function calculate () {
  
   // get user input
-  let weight = parseFloat(document.getElementById('body_weight').value)
-  let age = parseFloat(document.getElementById('person_age').value)
+  let Body Weight = parseFloat(document.getElementById('body_weight').value) 
+  let Age = parseFloat(document.getElementById('person_age').value)
 
   // output
   const water_result_1 = (2.2 / weight)

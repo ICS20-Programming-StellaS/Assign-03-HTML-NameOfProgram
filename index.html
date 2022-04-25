@@ -52,27 +52,55 @@
           <div class="mdl-textfield mdl-js-textfield">
             <input
               class="mdl-textfield__input"
-              type="text"
+              type="number"
+              min="0"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="body_weight"
+              id="person_weight"
             />
-            <label class="mdl-textfield__label" for="side_a-of-triangular-pyramid">Enter Body Weight ...</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
+            <label class="mdl-textfield__label" for="person_weight">Enter Body Weight ...</label>
+            <span class="mdl-textfield__error">Input is invalid!</span>
           </div>
         </form></center>
 				
         <!-- input person age -->
         <center><form action="#">
-          <p>Age Between Ages 30-55>
+          <p>Age Between Ages 30-55</p>
           <div class="mdl-textfield mdl-js-textfield">
             <input
               class="mdl-textfield__input"
-              type="text"
+              type="number"
               pattern="-?[0-9]*(\.[0-9]+)?"
+              min="30"
+              max="55"
               id="person_age"
             />
             <label class="mdl-textfield__label" for="height-of-triangular-pyramid">Eneter Age (30-55) ...</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
+            <span class="mdl-textfield__error">Input is invalid!</span>
+          </div>
+        </form></center>
+				
+        <!-- Raised button with ripple -->
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="calculate()"
+        >
+          Calculate
+        </button>
+        
+        <div id="water"></div>
+
+        <!-- input person age -->
+        <center><form action="#">
+          <p>Ounces to Liters</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="number"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="liters"
+            />
+            <label class="mdl-textfield__label" for="height-of-triangular-pyramid">Enter liters ...</label>
+            <span class="mdl-textfield__error">Input is invalid!</span>
           </div>
         </form></center>
 				

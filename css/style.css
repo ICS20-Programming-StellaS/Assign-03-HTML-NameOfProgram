@@ -1,0 +1,31 @@
+/* Created by: Stella S
+* Created on: Apr 2022
+* This CSS file defines the style for index.html
+* Assign-03-HTML-NameOfProgram
+*/
+
+body {
+  background-color:	LightCyan;
+}
+
+span {
+  padding: 40px;
+  color:  rgb(240, 255, 255)
+}
+
+form {
+  background-color: hsl(187, 52%, 80%);
+  font-size: 15pt;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+h4 {
+  background-color: rgb(240, 248, 255);
+  font-family: 'Courier New', monospace;
+  color: hsl(187, 24%, 42%);
+  font-size: 15pt;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+

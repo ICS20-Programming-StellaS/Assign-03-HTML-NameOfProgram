@@ -9,17 +9,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Code for the favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png" />
-    <link rel="manifest" href="./fav_index/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png" />
+    <link rel="manifest" href="./fav/site.webmanifest" />
 
     <!-- Code for the style sheets-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-blue.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
 
-    <!--Title-->
+    <!--Webpage title-->
     <title>How many liters of water should you drink?</title>
   </head>
   <center><body>
@@ -33,7 +33,7 @@
       </header>
       <main class="mdl-layout__content">
 
-      <!-- MDL Progress  -->
+      <!-- MDL component  -->
       <div id="p3" class="mdl-progress mdl-js-progress"></div>
       <script>
         document.querySelector('#p3').addEventListener('mdl-componentupgraded', function() {
@@ -42,13 +42,13 @@
         });
       </script>
 
-        <img src="./image/fancy_water.webp" width="40%" height="auto"/>/>
+        <img src="./image/fancy_water.webp" width="30%" height="auto"/>
 
-        <p>Calculate How Many Liters of Water You Should Drink a Day</p>
+        <h4>Calculate How Many Liters of Water You Should Drink a Day</h4>
         
         <!-- input body weight -->
         <center><form action="#">
-          <p>Body Weight (Ilbs)</p>
+          <h4>Body Weight (Ilbs)</h4>
           <div class="mdl-textfield mdl-js-textfield">
             <input
               class="mdl-textfield__input"
@@ -64,42 +64,17 @@
 				
         <!-- input person age -->
         <center><form action="#">
-          <p>Age Between Ages 30-55</p>
+          <h4>Age Between Ages 0-29</h4>
           <div class="mdl-textfield mdl-js-textfield">
             <input
               class="mdl-textfield__input"
               type="number"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              min="30"
-              max="55"
+              min="0"
+              max="29"
               id="person_age"
             />
             <label class="mdl-textfield__label" for="height-of-triangular-pyramid">Eneter Age (30-55) ...</label>
-            <span class="mdl-textfield__error">Input is invalid!</span>
-          </div>
-        </form></center>
-				
-        <!-- Raised button with ripple -->
-        <button
-          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="calculate()"
-        >
-          Calculate
-        </button>
-        
-        <div id="water"></div>
-
-        <!-- input person age -->
-        <center><form action="#">
-          <p>Ounces to Liters</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="number"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="liters"
-            />
-            <label class="mdl-textfield__label" for="height-of-triangular-pyramid">Enter liters ...</label>
             <span class="mdl-textfield__error">Input is invalid!</span>
           </div>
         </form></center>

@@ -14,19 +14,9 @@ function calculate () {
   let bodyWeight = parseFloat(document.getElementById('person_weight').value)
   let age = parseFloat(document.getElementById('person_age').value)
 
-  // output
-  let waterIntake = bodyWeight / 2.2 * 35 / 28.3
+  // calculate to ounces
+  let waterIntake = ( bodyWeight / 2.2 * 40 / 28.3 ) * 0.0295735
   
   // display the results
-  document.getElementById('water').innerHTML = 'You should drink: ' + waterIntake.toFixed(2)  + ' in ounces'
-}
-
-// get ounces input
-let liters = parseFloat(document.getElementById('liters').value)
-
-// output
- let waterIntake = waterIntake * 0.0295735
-
-  // display the results
-  document.getElementById('liters').innerHTML = 'You should drink: ' + waterIntake.toFixed(2)  + ' in liters'
+  document.getElementById('water').innerHTML = 'You should drink: ' + waterIntake.toFixed(2)  + ' liters of water a day.'
 }

@@ -14,7 +14,7 @@ function calculate () {
   let bodyWeight = parseFloat(document.getElementById('person_weight').value)
   let age = parseFloat(document.getElementById('person_age').value)
 
-  // calculate to ounces
+  // calculate to ounces to liters
   let waterIntake = ( bodyWeight / 2.2 * 40 / 28.3 ) * 0.0295735
   
   // display the results
